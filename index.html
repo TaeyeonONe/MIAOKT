@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PawsFlow 非侵入式智能宠物饮水器，桶装水直装即用，100%干湿分离零漏电风险，红外感应自动出水，重新定义宠物饮水安全">
+    <meta name="description" content="PawsFlow 非侵入式智能宠物饮水器，桶装水直装即用，100%干湿分离零漏电风险，红外水位识别自动补水。">
     <meta name="keywords" content="PawsFlow,宠物饮水机,智能宠物饮水器,非侵入式饮水机,宠物饮水安全,桶装水宠物饮水机">
     <title>PawsFlow | 全新定义宠物饮水安全</title>
     <!-- 引入高端无衬线字体 -->
@@ -20,7 +20,7 @@
             --off-white: #FDFBF9;
             --deep-text: #2D2D2D;
             --light-text: #6B6B6B;
-            --border-radius: 24px;
+            --border-radius: 16px;
             --card-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
             --hover-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
             --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -67,7 +67,7 @@
         }
 
         .logo { 
-            font-size: 1.5rem; 
+            font-size: 1.35rem; 
             font-weight: 800; 
             letter-spacing: -0.5px;
             color: var(--brand-gold);
@@ -105,7 +105,7 @@
 
         .menu-toggle {
             display: none;
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             cursor: pointer;
             color: var(--deep-text);
         }
@@ -143,7 +143,7 @@
             color: var(--light-text);
             margin-bottom: 40px;
             max-width: 540px;
-            line-height: 1.8;
+            line-height: 1.65;
         }
 
         .cta-group {
@@ -207,7 +207,7 @@
 
         /* 通用区块标题 */
         .section-title {
-            font-size: 2.8rem;
+            font-size: 2.35rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 16px;
@@ -219,26 +219,26 @@
             color: var(--light-text);
             text-align: center;
             max-width: 700px;
-            margin: 0 auto 60px;
+            margin: 0 auto 36px;
         }
 
         /* ========== 已修复：核心优势区对齐问题 ========== */
         .benefits { 
-            padding: 120px 10%; 
+            padding: 84px 10%; 
             background: var(--off-white);
         }
 
         .benefit-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 50px;
+            gap: 28px;
             max-width: 1400px;
             margin: 0 auto;
         }
 
         .benefit-card { 
             text-align: center;
-            padding: 40px 30px;
+            padding: 28px 24px;
             border-radius: var(--border-radius);
             transition: var(--transition);
             background: white;
@@ -262,7 +262,7 @@
         }
 
         .benefit-card h3 { 
-            font-size: 1.5rem; 
+            font-size: 1.35rem; 
             margin-bottom: 16px;
             font-weight: 700;
             color: var(--deep-text);
@@ -270,12 +270,187 @@
 
         .benefit-card p {
             color: var(--light-text);
-            line-height: 1.8;
+            line-height: 1.65;
+        }
+
+
+
+        /* 工作原理区 */
+        .principle {
+            padding: 84px 10%;
+            background: #fff;
+        }
+
+        .principle-panel {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 48px;
+            align-items: stretch;
+        }
+
+        .principle-flow, .principle-guards {
+            background: var(--off-white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .flow-steps {
+            display: grid;
+            gap: 18px;
+            margin-top: 26px;
+        }
+
+        .flow-step {
+            display: grid;
+            grid-template-columns: 44px 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .flow-num {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--brand-gold);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .flow-step h4, .principle-guards h4 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: var(--deep-text);
+        }
+
+        .flow-step p, .principle-guards p {
+            color: var(--light-text);
+            line-height: 1.65;
+        }
+
+        .guard-list {
+            display: grid;
+            gap: 18px;
+            margin-top: 26px;
+        }
+
+        .guard-item {
+            padding-left: 18px;
+            border-left: 3px solid var(--brand-gold);
+        }
+
+
+
+        /* AI健康管家区 */
+        .ai-health {
+            padding: 84px 10%;
+            background: var(--off-white);
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ai-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 28px 24px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .ai-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .ai-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 18px;
+            background: var(--brand-gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 22px;
+        }
+
+        .ai-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 14px;
+            color: var(--deep-text);
+        }
+
+        .ai-card p {
+            color: var(--light-text);
+            line-height: 1.65;
+        }
+
+
+
+        .principle-note {
+            max-width: 1200px;
+            margin: 28px auto 0;
+            background: linear-gradient(135deg, rgba(212, 163, 115, 0.14), rgba(233, 237, 201, 0.45));
+            border: 1px solid rgba(212, 163, 115, 0.24);
+            border-radius: var(--border-radius);
+            padding: 26px 30px;
+        }
+
+        .principle-note h3 {
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+        }
+
+        .principle-note p {
+            color: var(--light-text);
+            line-height: 1.7;
+        }
+
+        .ai-intro {
+            max-width: 960px;
+            margin: -14px auto 36px;
+            text-align: center;
+            color: var(--light-text);
+            line-height: 1.75;
+        }
+
+        .ai-video {
+            max-width: 960px;
+            margin: 38px auto 0;
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .ai-video video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #111;
+            object-fit: cover;
+        }
+
+        .ai-video-caption {
+            padding: 18px 22px;
+            color: var(--light-text);
+            line-height: 1.6;
         }
 
         /* 产品细节展示区 */
         .details {
-            padding: 120px 10%;
+            padding: 84px 10%;
         }
 
         .detail-row {
@@ -284,7 +459,7 @@
             justify-content: space-between;
             gap: 60px;
             max-width: 1400px;
-            margin: 0 auto 100px;
+            margin: 0 auto 64px;
         }
 
         .detail-row:last-child {
@@ -300,7 +475,7 @@
         }
 
         .detail-text h3 {
-            font-size: 2.2rem;
+            font-size: 1.9rem;
             margin-bottom: 20px;
             font-weight: 700;
             letter-spacing: -0.5px;
@@ -309,7 +484,7 @@
         .detail-text p {
             font-size: 1.05rem;
             color: var(--light-text);
-            line-height: 1.8;
+            line-height: 1.65;
             margin-bottom: 15px;
         }
 
@@ -335,7 +510,7 @@
         .scenarios { 
             background: var(--deep-text); 
             color: white; 
-            padding: 120px 10%; 
+            padding: 84px 10%; 
             text-align: center; 
         }
 
@@ -350,7 +525,7 @@
             position: relative; 
             border-radius: var(--border-radius); 
             overflow: hidden; 
-            height: 450px; 
+            height: 360px; 
         }
 
         .scenario-item img { 
@@ -368,14 +543,14 @@
 
         .scenario-text { 
             position: absolute; 
-            bottom: 40px; 
-            left: 30px; 
+            bottom: 28px; 
+            left: 24px; 
             text-align: left; 
             z-index: 2;
         }
 
         .scenario-text h4 {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             margin-bottom: 10px;
             font-weight: 700;
         }
@@ -387,7 +562,7 @@
 
         /* FAQ常见问题区 */
         .faq {
-            padding: 120px 10%;
+            padding: 84px 10%;
             background: var(--off-white);
         }
 
@@ -429,7 +604,7 @@
 
         .faq-answer p {
             padding-bottom: 24px;
-            line-height: 1.8;
+            line-height: 1.65;
         }
 
         .faq-item.active .faq-answer {
@@ -442,14 +617,14 @@
 
         /* 底部CTA区 */
         .cta-section { 
-            padding: 120px 10%; 
+            padding: 84px 10%; 
             text-align: center; 
             background: var(--brand-gold); 
             color: white; 
         }
 
         .cta-section h2 {
-            font-size: 2.8rem;
+            font-size: 2.35rem;
             margin-bottom: 16px;
             font-weight: 700;
             letter-spacing: -1px;
@@ -483,12 +658,12 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 28px;
             margin-bottom: 40px;
         }
 
         .footer-logo {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             font-weight: 800;
             color: var(--brand-gold);
             margin-bottom: 15px;
@@ -497,7 +672,7 @@
         .footer-desc {
             color: rgba(255, 255, 255, 0.7);
             max-width: 350px;
-            line-height: 1.8;
+            line-height: 1.65;
         }
 
         .footer-links h4 {
@@ -550,7 +725,7 @@
 
         /* 响应式适配 */
         @media (max-width: 992px) {
-            .hero, .detail-row, .detail-row.reverse, .scenario-grid {
+            .hero, .principle-panel, .detail-row, .detail-row.reverse, .scenario-grid {
                 flex-direction: column;
             }
             .hero-content, .hero-image, .detail-text, .detail-image, .scenario-item {
@@ -563,7 +738,7 @@
                 gap: 40px;
             }
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.35rem;
             }
             .benefits {
                 padding: 80px 5%;
@@ -573,9 +748,9 @@
                 gap: 30px;
             }
             .section-title {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
             }
-            .details, .scenarios, .faq, .cta-section {
+            .principle, .ai-health, .details, .scenarios, .faq, .cta-section {
                 padding: 80px 5%;
             }
             .detail-row {
@@ -596,7 +771,7 @@
                 background: white;
                 width: 70%;
                 height: 100vh;
-                padding: 40px 30px;
+                padding: 28px 24px;
                 box-shadow: -2px 0 20px rgba(0,0,0,0.05);
                 transition: var(--transition);
                 gap: 30px;
@@ -608,7 +783,7 @@
                 display: block;
             }
             .hero-content h1 {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
             }
             .cta-group {
                 width: 100%;
@@ -631,10 +806,12 @@
         <a href="#" class="logo">PAWSFLOW</a>
         <div class="nav-links" id="navLinks">
             <a href="#hero">首页</a>
-            <a href="#benefits">核心优势</a>
-            <a href="#details">产品细节</a>
-            <a href="#scenarios">使用场景</a>
-            <a href="#faq">常见问题</a>
+            <a href="#benefits">优势</a>
+            <a href="#principle">原理</a>
+            <a href="#ai-health">AI健康</a>
+            <a href="#details">细节</a>
+            <a href="#scenarios">场景</a>
+            <a href="#faq">FAQ</a>
         </div>
         <div class="menu-toggle" id="menuToggle">
             ☰
@@ -645,72 +822,166 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <h1>让饮水<br><span>回归纯净与安全</span></h1>
-            <p>不入水、不漏电、安装零门槛。PawsFlow 非侵入式智能宠物饮水器，标准桶装水直装即用，毫米级红外感应精准出水，食品级防溅软管设计，为您的爱宠打造零风险的五星级饮水体验。</p>
+            <p>桶装水直装，水电分离，自动维持水碗水位。更安静，也更省心。</p>
             <div class="cta-group">
-                <a href="#details" class="primary-btn">了解产品细节</a>
+                <a href="#principle" class="primary-btn">了解工作原理</a>
                 <a href="#faq" class="secondary-btn">查看常见问题</a>
             </div>
         </div>
         <div class="hero-image">
-            <!-- 替换为猫咪饮水+产品工作的实拍/渲染图 -->
-            <img src="images/hero.jpg" alt="PawsFlow 智能宠物饮水器产品展示" 
+            <!-- 替换为猫咪饮水、产品工作的实拍/渲染图 -->
+            <img src="images/hero.jpg" alt="PawsFlow 智能宠物饮水器产品展示"
                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRjNGNEY2Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWbvueJhzog5Lqn5Zyo5aSE5Luj56CB5Zu+54mIPC90ZXh0PjwvY2VudGVyPjwvc3ZnPg=='">
         </div>
     </section>
 
     <!-- 核心优势区（已修复对齐问题） -->
     <section class="benefits" id="benefits">
-        <h2 class="section-title">重新定义宠物饮水安全</h2>
-        <p class="section-desc">从根源解决传统饮水机漏电隐患，兼顾智能体验与极致安全</p>
+        <h2 class="section-title">三件事，做好饮水</h2>
+        <p class="section-desc">水电分离、桶装水直连、稳定补水。</p>
         
         <div class="benefit-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">⚡</div>
                 <h3>绝对的电气安全</h3>
-                <p>100%干湿分离设计，全机电子元件零入水，物理隔绝任何电流接触水源的可能，彻底杜绝漏电隐患，给猫咪最放心的守护。</p>
+                <p>电子元件不入水，从结构上降低漏电风险。</p>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">📦</div>
                 <h3>极致的适配性</h3>
-                <p>标准桶装水直装即用，无需打孔、无需改装、无需布线，同时支持壁挂安装，租房党也能3秒完成安装，适配全场景居家环境。</p>
+                <p>标准桶装水直装，无需打孔改装。</p>
             </div>
 
             <div class="benefit-card">
-                <div class="benefit-icon">📱</div>
-                <h3>智慧饮水管家</h3>
-                <p>内置高精度红外感应，一旦低于水位线自动出水。手机端实时同步水位数据，出差在外也能一键远程出水，对爱宠的关爱从不断线。</p>
+                <div class="benefit-icon">💧</div>
+                <h3>稳定省心补水</h3>
+                <p>自动维持合适水位，减少频繁添水。</p>
             </div>
+        </div>
+    </section>
+
+
+
+    <!-- 工作原理区 -->
+    <section class="principle" id="principle">
+        <h2 class="section-title">核心安全原理</h2>
+        <p class="section-desc">电路不进水，传感器不碰水，出水只按水位发生。</p>
+        <div class="principle-panel">
+            <div class="principle-flow">
+                <h3>为什么能防漏电</h3>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="flow-num">1</div>
+                        <div>
+                            <h4>电子元件全部在干区</h4>
+                            <p>主控、电源、传感器和水泵驱动都封装在瓶口主机内，不浸泡在水碗或桶装水里。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-num">2</div>
+                        <div>
+                            <h4>瓶内只进入食品级吸水管</h4>
+                            <p>桶装水内部只有硅胶吸水管负责取水，没有电极、探针或裸露金属触点接触水源。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-num">3</div>
+                        <div>
+                            <h4>水路和电路物理隔离</h4>
+                            <p>水从吸水管进入水泵，再由出水嘴和软管流入水碗；电路始终留在密封干区。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="principle-guards">
+                <h3>红外线如何判断水位</h3>
+                <div class="guard-list">
+                    <div class="guard-item">
+                        <h4>对准预设水位线</h4>
+                        <p>红外发射与接收模块固定在水碗侧向，对准目标水位高度。</p>
+                    </div>
+                    <div class="guard-item">
+                        <h4>水位低于线，信号通过</h4>
+                        <p>当水面低于设定线，红外通路变化，系统判断需要补水。</p>
+                    </div>
+                    <div class="guard-item">
+                        <h4>水位达到线，自动停止</h4>
+                        <p>水位回到目标高度后，红外信号再次变化，水泵停止工作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="principle-note">
+            <h3>核心功能：红外水位判断 + 非接触补水</h3>
+            <p>PawsFlow 判断的是水碗水位高度，不是宠物靠近。猫咪喝水时设备不会突然喷水；只有水位低于设定线，才从桶装水取水并补入水碗，达到目标水位后自动停止。</p>
+        </div>
+    </section>
+
+
+
+    <!-- AI健康管家区 -->
+    <section class="ai-health" id="ai-health">
+        <h2 class="section-title">AI，是安全体验的自然延伸</h2>
+        <p class="section-desc">结构负责饮水安全，AI 负责发现长期变化。</p>
+        <p class="ai-intro">当设备能够稳定记录每日出水量、补水次数和水位变化，PawsFlow 就不只是补水器。AI 会把这些数据整理成宠物的饮水基线，帮助主人更早发现“喝少了”“节奏变了”“设备异常了”。</p>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <div class="ai-icon">🩺</div>
+                <h3>健康风险预警</h3>
+                <p>长期饮水偏低、突然下降或连续异常波动时，AI 提醒主人关注尿闭、泌尿系统和肾脏相关风险。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">📈</div>
+                <h3>个体化饮水基线</h3>
+                <p>不同宠物饮水习惯不同。AI 不只套固定标准，而是学习这只宠物自己的正常节奏。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">🛠</div>
+                <h3>设备异常识别</h3>
+                <p>补水量、水位变化和水泵工作状态不一致时，可提示堵管、漏水、缺水或水碗移位。</p>
+            </div>
+        </div>
+        <div class="principle-note">
+            <h3>从“防漏电”到“防忽视”</h3>
+            <p>硬件安全解决的是当下饮水风险，AI 解决的是长期健康风险。它把每一次补水转化为可观察的健康线索，让安全从设备结构延伸到日常看护。</p>
+        </div>
+        <div class="ai-video">
+            <video controls muted playsinline poster="images/hero.jpg">
+                <source src="videos/pawsflow-demo.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+            <div class="ai-video-caption">演示流程：空碗识别 → 自动补水 → 到达水位线停止 → 猫咪喝水 → 记录每日饮水量。</div>
         </div>
     </section>
 
     <!-- 产品细节展示区 -->
     <section class="details" id="details">
-        <h2 class="section-title">每一处细节 都为安全而生</h2>
-        <p class="section-desc">从设计到落地，全程围绕宠物安全与使用体验打磨</p>
+        <h2 class="section-title">细节更少，体验更稳</h2>
+        <p class="section-desc">少一点打扰，多一点稳定。</p>
 
         <div class="detail-row">
             <div class="detail-text">
                 <h3>食品级防溅软管设计</h3>
-                <p>出水口标配食品级硅胶软管，安全无异味，可自由弯曲调整出水方向与长度，精准对准水碗中心。</p>
-                <p>有效降低水流下落高度，彻底杜绝水花溅射，再也不用每天擦拭宠物饮水区的湿地面，保持居家环境干净整洁。</p>
+                <p>食品级硅胶软管，可调方向，精准入碗。</p>
+                <p>降低落差，减少飞溅和湿地面。</p>
             </div>
             <div class="detail-image">
                 <!-- 替换为防溅软管细节图 -->
-                <img src="images/detail-hose.jpg" alt="食品级防溅软管细节" 
+                <img src="images/detail-hose.jpg" alt="食品级防溅软管细节"
                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRjNGNEY2Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWbvueJhzog6Ziy5rWL5b6u5Lqn5a6Y5pa5PC90ZXh0PjwvY2VudGVyPjwvc3ZnPg=='">
             </div>
         </div>
 
         <div class="detail-row reverse">
             <div class="detail-text">
-                <h3>非接触式水位监测</h3>
-                <p>采用高精度超声波传感器，无需接触水源即可实时监测桶装水剩余水位，低水位自动推送提醒到手机，再也不用担心主子断水。</p>
-                <p>完全避免了传统水位探针泡水滋生细菌、短路故障的问题，安全又耐用，长期使用也无需担心水质污染。</p>
+                <h3>密封瓶口适配 稳固不改装</h3>
+                <p>瓶口适配件固定，开箱即可安装。</p>
+                <p>稳固密封，减少晃动和渗水。</p>
             </div>
             <div class="detail-image">
                 <!-- 替换为水位监测细节图 -->
-                <img src="images/detail-water.jpg" alt="非接触式水位监测细节" 
+                <img src="images/detail-water.jpg" alt="瓶口密封适配细节" 
                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRjNGNEY2Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWbvueJhzog5rCR5Lqn5rCR54K555uY5rWL5a6Y5pa5PC90ZXh0PjwvY2VudGVyPjwvc3ZnPg=='">
             </div>
         </div>
@@ -718,8 +989,8 @@
         <div class="detail-row">
             <div class="detail-text">
                 <h3>静音低噪设计 不扰睡眠</h3>
-                <p>采用高品质静音水泵，运行噪音低至20分贝，仅在感应水位线过低时启动，告别传统饮水机彻夜流水的噪音。</p>
-                <p>深夜猫咪饮水也不会发出异响，无论是浅眠的铲屎官还是敏感的小猫咪，都能拥有安稳的睡眠环境。</p>
+                <p>静音水泵短时工作，不再整夜流水。</p>
+                <p>夜间更安静，宠物和主人都少被打扰。</p>
             </div>
             <div class="detail-image">
                 <!-- 替换为静音设计细节图 -->
@@ -731,23 +1002,23 @@
 
     <!-- 使用场景展示区 -->
     <section class="scenarios" id="scenarios">
-        <h2 class="section-title">全场景守护方案</h2>
-        <p class="section-desc">无论居家还是出行，全天候守护爱宠饮水安全</p>
+        <h2 class="section-title">适合这些场景</h2>
+        <p class="section-desc">日常、夜间、多宠家庭都适用。</p>
         <div class="scenario-grid">
             <div class="scenario-item">
-                <img src="images/scene1.jpg" alt="深夜静谧出水场景" 
+                <img src="images/scene1.jpg" alt="深夜安静守护场景" 
                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNDQ0Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuaelOaenOmgieWbvueJhzwvdGV4dD48L2NlbnRlcj48L3N2Zz4='">
                 <div class="scenario-text">
-                    <h4>深夜静谧出水</h4>
-                    <p>告别彻夜流水的噪音，仅在感应到靠近时轻柔启动，深夜饮水也不扰眠。</p>
+                    <h4>深夜安静守护</h4>
+                    <p>按需短时工作，夜间不扰眠。</p>
                 </div>
             </div>
             <div class="scenario-item">
-                <img src="images/scene2.jpg" alt="出差远程监控场景" 
+                <img src="images/scene2.jpg" alt="日常省心照看场景" 
                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNDQ0Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWHo+W3peeiueWbvueJhzwvdGV4dD48L2NlbnRlcj48L3N2Zz4='">
                 <div class="scenario-text">
-                    <h4>远程互动加水</h4>
-                    <p>即便身处千里之外，也能通过手机指尖传递爱意，实时查看水位一键出水。</p>
+                    <h4>日常省心照看</h4>
+                    <p>忙碌或短时外出，也能稳定供水。</p>
                 </div>
             </div>
             <div class="scenario-item">
@@ -755,7 +1026,7 @@
                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNDQ0Ii8+Y2VudGVyPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWkjeeUteWutuihjOaenOaenDwvdGV4dD48L2NlbnRlcj48L3N2Zz4='">
                 <div class="scenario-text">
                     <h4>多宠家庭适配</h4>
-                    <p>大桶装水直装，满足多宠家庭大水量需求，无需频繁换水，省心又省力。</p>
+                    <p>大桶装水直连，多宠家庭更省心。</p>
                 </div>
             </div>
         </div>
@@ -764,7 +1035,7 @@
     <!-- FAQ常见问题区 -->
     <section class="faq" id="faq">
         <h2 class="section-title">常见问题</h2>
-        <p class="section-desc">你想知道的都在这里</p>
+        <p class="section-desc">几个关键问题，一次说清。</p>
         <div class="faq-container">
             <div class="faq-item">
                 <div class="faq-question">
@@ -772,7 +1043,7 @@
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>默认适配国内通用的5加仑桶装水（标准口径55mm），同时提供可修改的3D打印图纸，可自行适配其他口径的桶装水、矿泉水桶。</p>
+                    <p>默认适配通用5加仑桶装水，其他口径可通过适配件扩展。</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -781,16 +1052,16 @@
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>支持Type-C 5V直流供电，可直接使用手机充电器、充电宝供电；也可加装锂电池模块，满电状态下可续航15-30天，满足不同使用场景。</p>
+                    <p>支持Type-C 5V供电，也可扩展电池模块。</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>感应距离可以调整吗？会不会误触发？</span>
+                    <span>会不会一直出水或溢出？</span>
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>感应距离可通过固件自由调整，默认感应距离5-30cm，支持设置感应延时，可有效避免路过误触发，仅在宠物靠近水碗时自动出水。</p>
+                    <p>通过阈值校准、短延时和最长出水时间，降低误判和溢水风险。</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -799,7 +1070,7 @@
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>完全可以。整机出厂预组装完成，收到后仅需直接插在桶装水上即可使用，无需任何工具，零基础也能3秒完成安装，开箱即用。</p>
+                    <p>可以。预组装设计，插到桶装水上即可使用。</p>
                 </div>
             </div>
         </div>
@@ -808,7 +1079,7 @@
     <!-- 底部CTA区 -->
     <section class="cta-section">
         <h2>准备好升级您的养宠生活了吗？</h2>
-        <p>即刻加入 PawsFlow 智能饮水新时代，给爱宠零风险的饮水守护</p>
+        <p>让每一碗水，都更稳定安心。</p>
         <a href="#" class="primary-btn">立即入手</a>
     </section>
 
@@ -817,7 +1088,7 @@
         <div class="footer-content">
             <div class="footer-info">
                 <div class="footer-logo">PAWSFLOW</div>
-                <p class="footer-desc">专注于为宠物打造安全、智能的饮水解决方案，以非侵入式设计重新定义宠物饮水安全，让每一位铲屎官都能安心出门，让每一只毛孩子都能喝上纯净安全的水。</p>
+                <p class="footer-desc">桶装水直连，干湿分离，稳定补水。</p>
             </div>
             <div class="footer-links">
                 <h4>产品中心</h4>
@@ -847,7 +1118,7 @@
         
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            menuToggle.innerHTML = navLinks.classList.contains('active') ? '✕' : '☰';
+            menuToggle.innerHTML = navLinks.classList.contains('active') ? '×' : '☰';
         });
 
         // 导航链接点击关闭菜单
